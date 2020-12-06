@@ -41,4 +41,34 @@ public final class MultiplicationResultAttempt {
         correct = false;
     }
 
+    public MultiplicationResultAttempt(User user, Multiplication multiplication, int resultAttempt, boolean correct) {
+        this.user = user;
+        this.multiplication = multiplication;
+        this.resultAttempt = resultAttempt;
+        this.correct = correct;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public Multiplication getMultiplication() {
+        return multiplication;
+    }
+
+    public int getResultAttempt() {
+        return resultAttempt;
+    }
+
+    public boolean isCorrect() {
+        return correct;
+    }
 }
